@@ -1,0 +1,41 @@
+#include <iostream>
+using std::string;
+class Employee {
+private:
+    string Name;
+    string Company;
+    int Age;
+public: 
+    void setName(string name){
+        Name = name;
+    }
+    string getName(){
+        return Name;
+    }
+    void setCompany(string company) {
+        Company = company;
+    }
+    string getCompany()  
+        return Company;
+    }
+    void setAge(int age) {
+        Age = age;
+    }
+    int getAge() {
+        return Age;
+    }
+        
+    
+};
+int main()
+{
+    Employee employee1 = Employee("Saldina", "YT-CodeBeauty",25);
+ employee1.IntroduceYourself();
+ 
+ Employee employee2 = Employee("John", "Amazon", 35);
+ employee2.IntroduceYourself();
+ 
+    employee1.setAge(39);
+    std::cout << employee1.getName()<<" is " << employee1.getAge() << " years old"
+    
+}
